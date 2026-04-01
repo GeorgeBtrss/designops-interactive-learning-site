@@ -388,7 +388,7 @@ export default function App() {
                 Interactive learning site for first-year UX students
               </div>
               <div className="space-y-4">
-                <h1 className="max-w-3xl text-4xl font-bold tracking-tight md:text-6xl" style={{ color: "#aac8d0" }}>
+                <h1 className="max-w-3xl text-4xl font-bold tracking-tight md:text-6xl" style={{ color: "rgba(91,130,160,0.25)" }}>
                   Learn the role of a <span className="text-black">UX Design Operations</span> team
                 </h1>
                 <p className="max-w-2xl text-lg leading-8 text-slate-600 md:text-xl">
@@ -490,12 +490,12 @@ export default function App() {
           </aside>
 
           <main className="rounded-[2rem] border border-white/50 bg-white/70 p-6 shadow-xl backdrop-blur-xl md:p-8">
-            <div className="flex flex-wrap items-start justify-between gap-4">
+            <div className="flex flex-wrap items-start justify-between gap-4 md:text-left">
               <div>
                 <div className="inline-flex rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-700">
                   Module {current + 1}
                 </div>
-                <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-4xl" style={{ color: "#aac8d0" }}>
+                <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-4xl" style={{ color: "rgba(91,130,160,0.25)" }}>
                   {module.title}
                 </h2>
                 <p className="mt-2 text-lg text-slate-600">{module.subtitle}</p>
