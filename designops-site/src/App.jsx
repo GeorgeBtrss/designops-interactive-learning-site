@@ -388,7 +388,7 @@ export default function App() {
                 Interactive learning site for first-year UX students
               </div>
               <div className="space-y-4">
-                <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-black md:text-6xl">
+                <h1 className="max-w-3xl text-4xl font-bold tracking-tight md:text-6xl" style={{ color: "#aac8d0" }}>
                   Learn the role of a <span className="text-black">UX Design Operations</span> team
                 </h1>
                 <p className="max-w-2xl text-lg leading-8 text-slate-600 md:text-xl">
@@ -422,7 +422,7 @@ export default function App() {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
               <div className="rounded-[1.75rem] border border-slate-200 bg-white/85 p-5 shadow-lg">
                 <div className="text-sm font-medium text-slate-500">Main focus</div>
-                <div className="mt-2 text-2xl font-bold text-slate-900">People • Process • Tools</div>
+                <div className="mt-2 text-2xl font-bold text-slate-900">People<br></br>Process<br></br>Tools</div>
                 <p className="mt-3 text-sm leading-7 text-slate-600">
                   DesignOps creates the conditions that help designers do their best work.
                 </p>
@@ -495,7 +495,7 @@ export default function App() {
                 <div className="inline-flex rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-700">
                   Module {current + 1}
                 </div>
-                <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">
+                <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-4xl" style={{ color: "#aac8d0" }}>
                   {module.title}
                 </h2>
                 <p className="mt-2 text-lg text-slate-600">{module.subtitle}</p>
