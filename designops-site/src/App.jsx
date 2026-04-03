@@ -1,17 +1,17 @@
 import React, { useMemo, useState } from "react";
-
+ 
 export default function App() {
   const mainSectionId = "lesson-content";
-
+ 
   const modules = [
     {
       id: 1,
       title: "What is DesignOps?",
       subtitle: "The team behind smoother UX work",
       info: [
-        "UX Design Operations, often called DesignOps, helps design teams work better together.",
-        "Instead of designing the product itself, DesignOps improves the systems around design work: workflows, tools, communication, documentation, onboarding, and team coordination.",
-        "A strong DesignOps team helps designers spend less time fighting process problems and more time solving user problems."
+        "UX Design Operations — DesignOps for short — is about making the environment around design work better. Not the designs themselves, but everything that shapes how design gets done.",
+        "That means things like workflows, documentation, tool decisions, onboarding, and how teams communicate. DesignOps people are often the ones asking: why does this keep breaking, and how do we fix it for good?",
+        "When DesignOps is working well, designers spend less time wrestling with process problems and more time solving actual user problems."
       ],
       type: "quiz",
       prompt: "Which option best describes the main role of a UX DesignOps team?",
@@ -22,16 +22,16 @@ export default function App() {
         "To collect personal data from users"
       ],
       answer: 1,
-      feedback: "Exactly. DesignOps supports the design team by improving how design work happens."
+      feedback: "Exactly. DesignOps supports the design team by improving how design work happens — not by doing the design itself."
     },
     {
       id: 2,
       title: "Why DesignOps Matters",
       subtitle: "Better process, better outcomes",
       info: [
-        "As design teams grow, problems can appear quickly: duplicated work, unclear feedback, messy handoff, inconsistent files, and weak collaboration.",
-        "DesignOps helps create consistency. This can improve design quality, speed, team morale, and communication across departments.",
-        "When the process is healthier, designers can focus more on research, problem-solving, and creating meaningful user experiences."
+        "Design teams run into the same problems once they grow past a handful of people: duplicated work, unclear feedback loops, messy handoff to developers, and files that nobody can find.",
+        "DesignOps brings some structure to that chaos. Better workflows, faster onboarding, more consistent output — these are not just productivity wins. They actually affect the quality of what gets shipped.",
+        "When the process is healthier, designers can put their energy into research and problem-solving instead of chasing down the right file version."
       ],
       type: "sort",
       prompt: "Choose the items that are DesignOps benefits.",
@@ -42,16 +42,16 @@ export default function App() {
         "Better design consistency"
       ],
       correctSet: [0, 1, 3],
-      feedback: "Nice. Clear workflows, faster onboarding, and consistency are all common DesignOps benefits."
+      feedback: "Right — clearer workflows, faster onboarding, and consistency are all things DesignOps actively works toward. Random file naming is more of a symptom of not having it."
     },
     {
       id: 3,
       title: "Key Responsibilities",
       subtitle: "What a DesignOps team often handles",
       info: [
-        "DesignOps can support a UX team in many ways, including managing design systems, improving feedback processes, organizing documentation, planning team rituals, and helping with tool adoption.",
-        "They may also support hiring, onboarding, project planning, and cross-functional collaboration with developers, product managers, and stakeholders.",
-        "Their work often sits at the intersection of people, process, and tools."
+        "DesignOps teams touch a lot of ground. On any given week, they might be refining a critique process, updating documentation, evaluating a new design tool, or figuring out why onboarding takes so long.",
+        "They also work across functions — coordinating with developers, product managers, and stakeholders on things like handoff standards and project planning.",
+        "One useful way to think about it: DesignOps work tends to fall into three buckets — the people side, the process side, and the tools side. Most DesignOps work lives somewhere in that triangle."
       ],
       type: "match",
       prompt: "Pick the category each responsibility fits into.",
@@ -61,16 +61,16 @@ export default function App() {
         { text: "Managing design tools", category: "Tools" }
       ],
       categories: ["People", "Process", "Tools"],
-      feedback: "That’s the big DesignOps lens: people, process, and tools working together."
+      feedback: "That is the core DesignOps lens: people, process, and tools. Most challenges in a design team trace back to one of these three."
     },
     {
       id: 4,
       title: "DesignOps and Collaboration",
       subtitle: "Helping teams work across roles",
       info: [
-        "UX work rarely happens in isolation. Designers often work with researchers, product managers, developers, content teams, and business stakeholders.",
-        "DesignOps can reduce confusion by creating shared systems for communication, reviews, handoff, and accountability.",
-        "This makes collaboration smoother and helps teams move with more confidence."
+        "UX work almost never happens in a bubble. Designers collaborate with researchers, product managers, engineers, content strategists, and business stakeholders — often all at once.",
+        "Without shared systems, this gets messy fast. DesignOps can step in with things like handoff checklists, review frameworks, and clear documentation standards that everyone agrees on.",
+        "The goal is not to add bureaucracy — it is to reduce the friction that slows teams down and causes things to fall through the cracks."
       ],
       type: "scenario",
       prompt: "A design team keeps missing details during developer handoff. What DesignOps solution makes the most sense?",
@@ -81,30 +81,30 @@ export default function App() {
         "Stop using components"
       ],
       answer: 1,
-      feedback: "Correct. DesignOps often solves recurring team issues by improving systems and shared practices."
+      feedback: "Right. When handoff keeps breaking down, the fix is usually a better shared system — not more pressure on individuals."
     },
     {
       id: 5,
       title: "Design Systems and Consistency",
       subtitle: "Keeping experiences unified",
       info: [
-        "A design system is a shared collection of reusable components, patterns, and guidelines.",
-        "DesignOps often supports the structure, governance, and rollout of design systems so teams can create more consistent products.",
-        "This helps reduce repetitive work and keeps interfaces more aligned across pages, features, and platforms."
+        "A design system is a shared library of components, patterns, and guidelines that a team builds and maintains together. Think of it as a living style guide that actually gets used.",
+        "DesignOps often owns (or at least supports) the governance and rollout of design systems — making sure people know what exists, where to find it, and how to contribute to it.",
+        "This reduces repetitive work and helps keep the product experience consistent across pages, features, and platforms — which matters a lot to users."
       ],
       type: "reflect",
       prompt: "Type one reason design consistency matters in UX.",
       placeholder: "Example: It helps users feel more confident because screens behave in familiar ways.",
-      feedback: "Good thinking. In UX, consistency helps users learn faster and reduces friction."
+      feedback: "Good thinking. Consistency is one of the foundational principles of usable design — when patterns are predictable, users do not have to relearn things."
     },
     {
       id: 6,
       title: "Your DesignOps Takeaway",
       subtitle: "Connect the idea to your future work",
       info: [
-        "Even as a first-year UX student, understanding DesignOps can help you see that good design is not only about creativity. It also depends on structure, communication, and sustainable teamwork.",
-        "Learning how teams stay organized is valuable because strong UX outcomes usually come from strong collaboration systems.",
-        "As teams scale, DesignOps becomes more important, not less."
+        "As a first-year UX student, you might not be managing a design system or running onboarding programs yet — but understanding DesignOps changes how you think about design work.",
+        "Good UX is not just about creativity. It depends on structure, communication, and sustainable ways of working together. The teams that ship great products usually have strong collaboration systems behind them.",
+        "As teams grow, DesignOps does not become less relevant — it becomes more important. Starting to think about it now gives you a real edge."
       ],
       type: "checklist",
       prompt: "Choose the statements that feel true after completing this lesson.",
@@ -115,55 +115,95 @@ export default function App() {
         "Process can shape the quality of user experience"
       ],
       correctSet: [0, 1, 3],
-      feedback: "Exactly. Great UX is supported by strong systems as well as strong ideas."
+      feedback: "Exactly. Strong UX outcomes tend to come from strong systems — not just strong ideas."
     },
     {
       id: 7,
-      title: "Final Scenario Challenge",
-      subtitle: "Apply what you learned to a realistic team problem",
+      title: "Overall Quiz",
+      subtitle: "Test your understanding across all modules",
       info: [
-        "A growing UX team at a retail company is struggling with inconsistent Figma files, unclear developer handoff, and long onboarding time for new designers.",
-        "Product managers say projects are slowing down, developers keep asking for missing details, and newer designers feel unsure about where to find the latest components and documentation.",
-        "A DesignOps team has been asked to improve the situation. Think about which actions would best solve the root problems instead of only treating the symptoms."
+        "You have made it through all seven modules. This final quiz pulls one question from each topic — a chance to see how much has actually stuck.",
+        "There are 7 questions total, one for each concept you covered. Read each one carefully; a few of them are more nuanced than they first appear.",
+        "Your score will appear once you submit. Good luck."
       ],
-      type: "capstone",
-      prompt: "Select the best DesignOps actions for this scenario.",
+      type: "finalquiz",
+      prompt: "Answer all 7 questions, then submit to see your score.",
       questions: [
         {
-          question: "What should the team prioritize first?",
+          question: "What is the primary focus of a DesignOps team?",
           options: [
-            "Create a clearer shared system for files, components, and documentation",
-            "Tell each designer to organize files however they prefer",
-            "Stop doing design reviews to save time",
-            "Wait until the team gets much larger before changing anything"
+            "Designing the visual interface of products",
+            "Improving the systems and processes that support design work",
+            "Managing the company marketing campaigns",
+            "Replacing UX researchers on the team"
           ],
-          answer: 0
+          answer: 1
         },
         {
-          question: "What would best improve developer handoff?",
+          question: "Which of these is a common benefit of investing in DesignOps?",
           options: [
-            "Use a repeatable handoff checklist and shared documentation standard",
-            "Ask developers to figure out missing details themselves",
-            "Avoid writing annotations because they take too long",
-            "Let every project team invent its own handoff process from scratch"
+            "Designers work in more isolation",
+            "Handoff documents become optional",
+            "Faster onboarding for new team members",
+            "Less need for a design system"
           ],
-          answer: 0
+          answer: 2
         },
         {
-          question: "What would help new designers onboard faster?",
+          question: "DesignOps responsibilities are often grouped into three areas. Which set is correct?",
           options: [
-            "A central place for tools, guidelines, and team processes",
-            "A rule that new designers should learn everything by trial and error",
-            "Less documentation so there is less to read",
-            "Removing the design system entirely"
+            "Branding, Typography, Color",
+            "Research, Testing, Delivery",
+            "People, Process, Tools",
+            "Strategy, Marketing, Sales"
           ],
-          answer: 0
+          answer: 2
+        },
+        {
+          question: "A design team keeps having problems during developer handoff. What is the most sustainable DesignOps fix?",
+          options: [
+            "Ask developers to ask fewer questions",
+            "Stop doing handoffs and let developers use Figma directly",
+            "Implement a shared handoff checklist and documentation standard",
+            "Switch design tools every quarter"
+          ],
+          answer: 2
+        },
+        {
+          question: "What role does DesignOps typically play in a design system?",
+          options: [
+            "They design all the components from scratch each sprint",
+            "They support the governance, structure, and rollout of the design system",
+            "They decide which colors and fonts are used",
+            "They prevent designers from contributing to the system"
+          ],
+          answer: 1
+        },
+        {
+          question: "Why is design consistency important to the user experience?",
+          options: [
+            "It makes the product look more expensive",
+            "It helps users build familiarity and reduces the effort needed to learn the product",
+            "It means fewer designers are needed",
+            "It allows teams to skip usability testing"
+          ],
+          answer: 1
+        },
+        {
+          question: "For a growing UX team struggling with messy files and slow onboarding, what would a DesignOps team most likely do first?",
+          options: [
+            "Hire more senior designers",
+            "Tell each person to manage their own files differently",
+            "Create a central shared system for components, documentation, and guidelines",
+            "Reduce the number of ongoing projects"
+          ],
+          answer: 2
         }
       ],
-      feedback: "Great job. The strongest DesignOps decisions usually create shared structure, reduce confusion, and make collaboration easier across the whole team."
+      feedback: "That is a wrap. Review any questions you missed — each one maps back to a specific module if you want to revisit the concept."
     }
   ];
-
+ 
   const [current, setCurrent] = useState(0);
   const [quizAnswers, setQuizAnswers] = useState({});
   const [multiAnswers, setMultiAnswers] = useState({});
@@ -171,50 +211,64 @@ export default function App() {
   const [reflections, setReflections] = useState({});
   const [submitted, setSubmitted] = useState({});
   const [capstoneAnswers, setCapstoneAnswers] = useState({});
-
+  const [finalQuizAnswers, setFinalQuizAnswers] = useState({});
+ 
   const module = modules[current];
-
+ 
   const progress = useMemo(() => {
     return Math.round(((current + 1) / modules.length) * 100);
   }, [current, modules.length]);
-
+ 
   function submitModule(id) {
     setSubmitted((prev) => ({ ...prev, [id]: true }));
   }
-
+ 
   function isCorrect(mod) {
     if (!submitted[mod.id]) return null;
-
+ 
     if (mod.type === "quiz" || mod.type === "scenario") {
       return quizAnswers[mod.id] === mod.answer;
     }
-
+ 
     if (mod.type === "sort" || mod.type === "checklist") {
       const selected = multiAnswers[mod.id] || [];
       const a = [...selected].sort().join(",");
       const b = [...mod.correctSet].sort().join(",");
       return a === b;
     }
-
+ 
     if (mod.type === "match") {
       return mod.items.every(
         (item, index) => matchAnswers[`${mod.id}-${index}`] === item.category
       );
     }
-
+ 
     if (mod.type === "reflect") {
       return (reflections[mod.id] || "").trim().length > 0;
     }
-
+ 
     if (mod.type === "capstone") {
       return mod.questions.every((question, index) => {
         return capstoneAnswers[`${mod.id}-${index}`] === question.answer;
       });
     }
-
+ 
+    if (mod.type === "finalquiz") {
+      return mod.questions.every((question, index) => {
+        return finalQuizAnswers[`${mod.id}-${index}`] === question.answer;
+      });
+    }
+ 
     return false;
   }
-
+ 
+  function getFinalQuizScore(mod) {
+    if (!submitted[mod.id]) return null;
+    return mod.questions.reduce((score, question, index) => {
+      return finalQuizAnswers[`${mod.id}-${index}`] === question.answer ? score + 1 : score;
+    }, 0);
+  }
+ 
   function renderActivity(mod) {
     if (mod.type === "quiz" || mod.type === "scenario") {
       return (
@@ -241,7 +295,7 @@ export default function App() {
         </div>
       );
     }
-
+ 
     if (mod.type === "sort" || mod.type === "checklist") {
       const selected = multiAnswers[mod.id] || [];
       return (
@@ -276,7 +330,7 @@ export default function App() {
         </div>
       );
     }
-
+ 
     if (mod.type === "match") {
       return (
         <div className="space-y-5">
@@ -311,7 +365,7 @@ export default function App() {
         </div>
       );
     }
-
+ 
     if (mod.type === "reflect") {
       return (
         <div className="space-y-4">
@@ -326,7 +380,7 @@ export default function App() {
         </div>
       );
     }
-
+ 
     if (mod.type === "capstone") {
       return (
         <div className="space-y-6">
@@ -369,19 +423,116 @@ export default function App() {
         </div>
       );
     }
-
+ 
+    if (mod.type === "finalquiz") {
+      const isSubmitted = submitted[mod.id];
+      const score = isSubmitted ? getFinalQuizScore(mod) : null;
+      const total = mod.questions.length;
+ 
+      return (
+        <div className="space-y-6">
+          <p className="text-base md:text-lg font-medium text-slate-800">{mod.prompt}</p>
+ 
+          {isSubmitted && score !== null && (
+            <div className={`rounded-2xl border p-5 ${
+              score === total
+                ? "border-emerald-200 bg-emerald-50"
+                : score >= Math.ceil(total * 0.7)
+                ? "border-cyan-200 bg-cyan-50"
+                : "border-amber-200 bg-amber-50"
+            }`}>
+              <div className={`text-2xl font-bold ${
+                score === total ? "text-emerald-800" : score >= Math.ceil(total * 0.7) ? "text-cyan-800" : "text-amber-800"
+              }`}>
+                {score} / {total}
+              </div>
+              <p className={`mt-1 text-sm font-medium ${
+                score === total ? "text-emerald-700" : score >= Math.ceil(total * 0.7) ? "text-cyan-700" : "text-amber-700"
+              }`}>
+                {score === total
+                  ? "Perfect score — you really nailed it."
+                  : score >= Math.ceil(total * 0.7)
+                  ? "Solid work. A few to revisit, but you have got the core ideas."
+                  : "Worth going back through the modules — the concepts will click more on a second pass."}
+              </p>
+            </div>
+          )}
+ 
+          <div className="space-y-5">
+            {mod.questions.map((question, qIndex) => {
+              const selectedAnswer = finalQuizAnswers[`${mod.id}-${qIndex}`];
+              return (
+                <div
+                  key={question.question}
+                  className="rounded-2xl border border-slate-200 bg-white/90 p-4"
+                >
+                  <p className="text-sm font-semibold text-slate-800 md:text-base">
+                    <span className="mr-2 text-slate-400">Q{qIndex + 1}.</span>
+                    {question.question}
+                  </p>
+                  <div className="mt-3 grid gap-2">
+                    {question.options.map((option, optionIndex) => {
+                      const isSelected = selectedAnswer === optionIndex;
+                      const isCorrectAnswer = optionIndex === question.answer;
+                      let style = "border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:shadow-sm";
+ 
+                      if (isSubmitted) {
+                        if (isCorrectAnswer) {
+                          style = "border-emerald-400 bg-emerald-50 text-emerald-900";
+                        } else if (isSelected && !isCorrectAnswer) {
+                          style = "border-red-300 bg-red-50 text-red-800";
+                        } else {
+                          style = "border-slate-200 bg-white text-slate-400";
+                        }
+                      } else if (isSelected) {
+                        style = "border-violet-700 bg-violet-50 text-violet-950 shadow-md";
+                      }
+ 
+                      return (
+                        <button
+                          key={option}
+                          onClick={() => {
+                            if (!isSubmitted) {
+                              setFinalQuizAnswers((prev) => ({
+                                ...prev,
+                                [`${mod.id}-${qIndex}`]: optionIndex,
+                              }));
+                            }
+                          }}
+                          disabled={isSubmitted}
+                          className={`w-full rounded-xl border px-4 py-3 text-left text-sm transition-all duration-200 md:text-base ${style} ${isSubmitted ? "cursor-default" : ""}`}
+                        >
+                          {option}
+                          {isSubmitted && isCorrectAnswer && (
+                            <span className="ml-2 text-xs font-semibold text-emerald-600">correct</span>
+                          )}
+                          {isSubmitted && isSelected && !isCorrectAnswer && (
+                            <span className="ml-2 text-xs font-semibold text-red-500">your answer</span>
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      );
+    }
+ 
     return null;
   }
-
+ 
   const correct = isCorrect(module);
-
+ 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.22),_transparent_28%),radial-gradient(circle_at_top_right,_rgba(168,85,247,0.18),_transparent_25%),linear-gradient(180deg,_#f8fafc_0%,_#eef2ff_40%,_#ecfeff_100%)] text-slate-900">
       <div className="mx-auto max-w-7xl px-4 py-8 md:px-8 md:py-10">
         <section className="relative overflow-hidden rounded-[2rem] border border-white/50 bg-white/70 p-6 shadow-2xl backdrop-blur-xl md:p-10">
           <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-cyan-300/20 blur-3xl" />
           <div className="absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-violet-300/20 blur-3xl" />
-
+ 
           <div className="relative grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div className="space-y-6">
               <div className="inline-flex items-center rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-600 shadow-sm">
@@ -393,7 +544,7 @@ export default function App() {
                 </h1>
                 <p className="max-w-2xl text-lg leading-8 text-slate-600 md:text-xl">
                   Explore how DesignOps supports people, process, and tools through bite-sized modules,
-                  quick activities, and interactive reflection.
+                  quick activities, and an overall quiz to test what you have learned.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">
@@ -414,11 +565,11 @@ export default function App() {
                   onClick={() => setCurrent(modules.length - 1)}
                   className="rounded-2xl border border-slate-300 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400"
                 >
-                  Jump to final takeaway
+                  Jump to overall quiz
                 </button>
               </div>
             </div>
-
+ 
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
               <div className="rounded-[1.75rem] border border-slate-200 bg-white/85 p-5 shadow-lg">
                 <div className="text-sm font-medium text-slate-500">Main focus</div>
@@ -431,13 +582,13 @@ export default function App() {
                 <div className="text-sm font-medium text-white/70">Lesson structure</div>
                 <div className="mt-2 text-2xl font-bold">7 interactive modules</div>
                 <p className="mt-3 text-sm leading-7 text-white/80">
-                  Each section gives you a concept, then lets you test or apply it right away.
+                  Each section covers a concept, then lets you test or apply it right away.
                 </p>
               </div>
             </div>
           </div>
         </section>
-
+ 
         <section id={mainSectionId} className="mt-8 grid gap-6 scroll-mt-24 lg:grid-cols-[290px_1fr]">
           <aside className="rounded-[2rem] border border-white/50 bg-white/70 p-5 shadow-xl backdrop-blur-xl">
             <div className="mb-5">
@@ -452,7 +603,7 @@ export default function App() {
                 />
               </div>
             </div>
-
+ 
             <div className="space-y-3">
               {modules.map((item, index) => {
                 const done = submitted[item.id] && isCorrect(item);
@@ -473,7 +624,7 @@ export default function App() {
                             current === index ? "text-white/60" : "text-slate-400"
                           }`}
                         >
-                          Module {index + 1}
+                          {item.type === "finalquiz" ? "Quiz" : `Module ${index + 1}`}
                         </div>
                         <div className="mt-1 text-sm font-semibold leading-6">{item.title}</div>
                       </div>
@@ -488,12 +639,16 @@ export default function App() {
               })}
             </div>
           </aside>
-
+ 
           <main className="rounded-[2rem] border border-white/50 bg-white/70 p-6 shadow-xl backdrop-blur-xl md:p-8">
             <div className="flex flex-wrap items-start justify-between gap-4 md:text-left">
               <div>
-                <div className="inline-flex rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-700">
-                  Module {current + 1}
+                <div className={`inline-flex rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] ${
+                  module.type === "finalquiz"
+                    ? "border-violet-200 bg-violet-50 text-violet-700"
+                    : "border-cyan-200 bg-cyan-50 text-cyan-700"
+                }`}>
+                  {module.type === "finalquiz" ? "Overall Quiz" : `Module ${current + 1}`}
                 </div>
                 <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-4xl" style={{ color: "rgba(91,130,160,0.25)" }}>
                   {module.title}
@@ -501,7 +656,7 @@ export default function App() {
                 <p className="mt-2 text-lg text-slate-600">{module.subtitle}</p>
               </div>
             </div>
-
+ 
             <div className="mt-8 grid gap-6 xl:grid-cols-[1fr_0.95fr]">
               <div className="rounded-[1.75rem] border border-slate-200 bg-white/85 p-6 shadow-sm">
                 <h3 className="text-lg font-semibold text-slate-900">Learn</h3>
@@ -511,25 +666,31 @@ export default function App() {
                   ))}
                 </div>
               </div>
-
+ 
               <div className="rounded-[1.75rem] border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-6 shadow-sm">
                 <div className="flex items-center justify-between gap-3">
                   <h3 className="text-lg font-semibold text-slate-900">Activity</h3>
                   <div className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-500">
-                    Interactive check-in
+                    {module.type === "finalquiz" ? "7-question quiz" : "Interactive check-in"}
                   </div>
                 </div>
-
+ 
                 <div className="mt-5">{renderActivity(module)}</div>
-
+ 
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <button
-                    onClick={() => submitModule(module.id)}
-                    className="rounded-2xl bg-slate-950 px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5"
-                  >
-                    {module.type === "capstone" ? "Submit final challenge" : "Check answer"}
-                  </button>
-
+                  {!submitted[module.id] && (
+                    <button
+                      onClick={() => submitModule(module.id)}
+                      className="rounded-2xl bg-slate-950 px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5"
+                    >
+                      {module.type === "capstone"
+                        ? "Submit final challenge"
+                        : module.type === "finalquiz"
+                        ? "Submit quiz"
+                        : "Check answer"}
+                    </button>
+                  )}
+ 
                   <button
                     onClick={() => {
                       if (current > 0) setCurrent(current - 1);
@@ -538,7 +699,7 @@ export default function App() {
                   >
                     Previous
                   </button>
-
+ 
                   <button
                     onClick={() => {
                       if (current < modules.length - 1) setCurrent(current + 1);
@@ -548,8 +709,8 @@ export default function App() {
                     {current === modules.length - 1 ? "Review lesson" : "Next"}
                   </button>
                 </div>
-
-                {submitted[module.id] && (
+ 
+                {submitted[module.id] && module.type !== "finalquiz" && (
                   <div
                     className={`mt-6 rounded-2xl border p-4 ${
                       correct
@@ -561,11 +722,17 @@ export default function App() {
                     <p className="mt-1 text-sm leading-7">{module.feedback}</p>
                   </div>
                 )}
+ 
+                {submitted[module.id] && module.type === "finalquiz" && (
+                  <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4 text-slate-700">
+                    <p className="text-sm leading-7">{module.feedback}</p>
+                  </div>
+                )}
               </div>
             </div>
           </main>
         </section>
-
+ 
         <section className="mt-8 grid gap-6 md:grid-cols-3">
           <div className="rounded-[1.75rem] border border-white/50 bg-white/70 p-6 shadow-lg backdrop-blur-xl">
             <div className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400">People</div>
@@ -593,3 +760,4 @@ export default function App() {
     </div>
   );
 }
+ 
