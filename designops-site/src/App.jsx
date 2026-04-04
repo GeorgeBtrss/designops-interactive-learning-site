@@ -9,7 +9,7 @@ export default function App() {
       title: "What is DesignOps?",
       subtitle: "The team behind smoother UX work",
       info: [
-        "UX Design Operations — DesignOps for short — is about making the environment around design work better. Not the designs themselves, but everything that shapes how design gets done.",
+        "UX Design Operations (DesignOps for short) is about making the environment around design work better. Not the designs themselves, but everything that shapes how design gets done.",
         "That means things like workflows, documentation, tool decisions, onboarding, and how teams communicate. DesignOps people are often the ones asking: why does this keep breaking, and how do we fix it for good?",
         "When DesignOps is working well, designers spend less time wrestling with process problems and more time solving actual user problems."
       ],
@@ -30,7 +30,7 @@ export default function App() {
       subtitle: "Better process, better outcomes",
       info: [
         "Design teams run into the same problems once they grow past a handful of people: duplicated work, unclear feedback loops, messy handoff to developers, and files that nobody can find.",
-        "DesignOps brings some structure to that chaos. Better workflows, faster onboarding, more consistent output — these are not just productivity wins. They actually affect the quality of what gets shipped.",
+        "DesignOps brings some structure to that chaos. Better workflows, faster onboarding, more consistent output. These aren't just productivity wins, they actually affect the quality of what gets shipped.",
         "When the process is healthier, designers can put their energy into research and problem-solving instead of chasing down the right file version."
       ],
       type: "sort",
@@ -50,27 +50,27 @@ export default function App() {
       subtitle: "What a DesignOps team often handles",
       info: [
         "DesignOps teams touch a lot of ground. On any given week, they might be refining a critique process, updating documentation, evaluating a new design tool, or figuring out why onboarding takes so long.",
-        "They also work across functions — coordinating with developers, product managers, and stakeholders on things like handoff standards and project planning.",
-        "One useful way to think about it: DesignOps work tends to fall into three buckets — the people side, the process side, and the tools side. Most DesignOps work lives somewhere in that triangle."
+        "They also work across functions, coordinating with a business' teams on things like handoff standards and project planning.",
+        "One useful way to think about it: DesignOps work tends to fall into three buckets: the people side, the process side, the tools side. Most DesignOps work lives somewhere in that triangle."
       ],
       type: "match",
       prompt: "Pick the category each responsibility fits into.",
       items: [
-        { text: "Onboarding new designers", category: "People" },
         { text: "Improving critique workflow", category: "Process" },
-        { text: "Managing design tools", category: "Tools" }
+        { text: "Managing design tools", category: "Tools" },
+        { text: "Onboarding new designers", category: "People" }
       ],
       categories: ["People", "Process", "Tools"],
-      feedback: "That is the core DesignOps lens: people, process, and tools. Most challenges in a design team trace back to one of these three."
+      feedback: "That's the core DesignOps lens: people, process, and tools. Most challenges in a design team trace back to one of these three."
     },
     {
       id: 4,
       title: "DesignOps and Collaboration",
       subtitle: "Helping teams work across roles",
       info: [
-        "UX work almost never happens in a bubble. Designers collaborate with researchers, product managers, engineers, content strategists, and business stakeholders — often all at once.",
+        "UX work almost never happens in a bubble. Designers collaborate with multiple people from different teams within a business, often all at once, whether it be engineers or stakeholders.",
         "Without shared systems, this gets messy fast. DesignOps can step in with things like handoff checklists, review frameworks, and clear documentation standards that everyone agrees on.",
-        "The goal is not to add bureaucracy — it is to reduce the friction that slows teams down and causes things to fall through the cracks."
+        "The goal isn't to add bureaucracy, but to reduce the friction that slows teams down and causes things to fall through the cracks."
       ],
       type: "scenario",
       prompt: "A design team keeps missing details during developer handoff. What DesignOps solution makes the most sense?",
@@ -89,22 +89,22 @@ export default function App() {
       subtitle: "Keeping experiences unified",
       info: [
         "A design system is a shared library of components, patterns, and guidelines that a team builds and maintains together. Think of it as a living style guide that actually gets used.",
-        "DesignOps often owns (or at least supports) the governance and rollout of design systems — making sure people know what exists, where to find it, and how to contribute to it.",
-        "This reduces repetitive work and helps keep the product experience consistent across pages, features, and platforms — which matters a lot to users."
+        "DesignOps often owns (or at least supports) the governance and rollout of design systems, making sure people know what exists, where to find it, and how to contribute to it.",
+        "This reduces repetitive work and helps keep the product experience consistent from pages and features to the platforms they're used on — which matters a lot to users."
       ],
       type: "reflect",
       prompt: "Type one reason design consistency matters in UX.",
       placeholder: "Example: It helps users feel more confident because screens behave in familiar ways.",
-      feedback: "Good thinking. Consistency is one of the foundational principles of usable design — when patterns are predictable, users do not have to relearn things."
+      feedback: "Good thinking. Consistency is one of the foundational principles of usable design — when patterns are predictable, users don't have to relearn things."
     },
     {
       id: 6,
       title: "Your DesignOps Takeaway",
       subtitle: "Connect the idea to your future work",
       info: [
-        "As a first-year UX student, you might not be managing a design system or running onboarding programs yet — but understanding DesignOps changes how you think about design work.",
-        "Good UX is not just about creativity. It depends on structure, communication, and sustainable ways of working together. The teams that ship great products usually have strong collaboration systems behind them.",
-        "As teams grow, DesignOps does not become less relevant — it becomes more important. Starting to think about it now gives you a real edge."
+        "As a new UX student, you might not be managing a design system or running onboarding programs yet, but understanding DesignOps changes how you think about design work.",
+        "Good UX isn't just about creativity. It depends on structure, communication, and sustainable ways of working together. The teams that ship great products usually have strong collaboration systems behind them.",
+        "As teams grow, DesignOps doesn't become less relevant, rather it becomes more important. Starting to think about it now gives you a real edge."
       ],
       type: "checklist",
       prompt: "Choose the statements that feel true after completing this lesson.",
@@ -115,19 +115,19 @@ export default function App() {
         "Process can shape the quality of user experience"
       ],
       correctSet: [0, 1, 3],
-      feedback: "Exactly. Strong UX outcomes tend to come from strong systems — not just strong ideas."
+      feedback: "Exactly. Strong UX outcomes tend to come from strong systems, not just strong ideas."
     },
     {
       id: 7,
-      title: "Overall Quiz",
+      title: "Final Recap",
       subtitle: "Test your understanding across all modules",
       info: [
-        "You have made it through all seven modules. This final quiz pulls one question from each topic — a chance to see how much has actually stuck.",
-        "There are 7 questions total, one for each concept you covered. Read each one carefully; a few of them are more nuanced than they first appear.",
-        "Your score will appear once you submit. Good luck."
+        "You've made it through all six modules. This final quiz pulls one question from each topic — a chance to see how much has actually stuck.",
+        "There are 6 questions total, one for each concept you covered. Read each one carefully; a few of them are more nuanced than they first appear.",
+        "Your score will appear once you submit. Good luck!"
       ],
       type: "finalquiz",
-      prompt: "Answer all 7 questions, then submit to see your score.",
+      prompt: "Answer all 6 questions, then submit to see your score.",
       questions: [
         {
           question: "What is the primary focus of a DesignOps team?",
@@ -172,20 +172,10 @@ export default function App() {
         {
           question: "What role does DesignOps typically play in a design system?",
           options: [
-            "They design all the components from scratch each sprint",
-            "They support the governance, structure, and rollout of the design system",
-            "They decide which colors and fonts are used",
-            "They prevent designers from contributing to the system"
-          ],
-          answer: 1
-        },
-        {
-          question: "Why is design consistency important to the user experience?",
-          options: [
-            "It makes the product look more expensive",
-            "It helps users build familiarity and reduces the effort needed to learn the product",
-            "It means fewer designers are needed",
-            "It allows teams to skip usability testing"
+            "Designing all the components from scratch each sprint",
+            "Supporting the structure and rollout of the design system",
+            "Deciding which colors and fonts are used",
+            "Preventing designers from contributing to the system"
           ],
           answer: 1
         },
@@ -194,13 +184,13 @@ export default function App() {
           options: [
             "Hire more senior designers",
             "Tell each person to manage their own files differently",
-            "Create a central shared system for components, documentation, and guidelines",
+            "Create a central shared system for components and documentation, as well as guidelines",
             "Reduce the number of ongoing projects"
           ],
           answer: 2
         }
       ],
-      feedback: "That is a wrap. Review any questions you missed — each one maps back to a specific module if you want to revisit the concept."
+      feedback: "That's a wrap. Review any questions you missed — each one maps back to a specific module if you want to revisit the concept."
     }
   ];
  
@@ -452,7 +442,7 @@ export default function App() {
                 {score === total
                   ? "Perfect score — you really nailed it."
                   : score >= Math.ceil(total * 0.7)
-                  ? "Solid work. A few to revisit, but you have got the core ideas."
+                  ? "Solid work. A few to revisit, but you've got the core ideas."
                   : "Worth going back through the modules — the concepts will click more on a second pass."}
               </p>
             </div>
@@ -536,15 +526,15 @@ export default function App() {
           <div className="relative grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div className="space-y-6">
               <div className="inline-flex items-center rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-600 shadow-sm">
-                Interactive learning site for first-year UX students
+                Interactive learning site for new UX students
               </div>
               <div className="space-y-4">
                 <h1 className="max-w-3xl text-4xl font-bold tracking-tight md:text-6xl" style={{ color: "rgba(91,130,160,0.25)" }}>
                   Learn the role of a <span className="text-black">UX Design Operations</span> team
                 </h1>
                 <p className="max-w-2xl text-lg leading-8 text-slate-600 md:text-xl">
-                  Explore how DesignOps supports people, process, and tools through bite-sized modules,
-                  quick activities, and an overall quiz to test what you have learned.
+                  Explore how DesignOps supports people, process, and tools through bite-sized lessons 
+                  followed by a quick activity, then a final quiz to test what you've learned.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">
@@ -650,16 +640,16 @@ export default function App() {
                 }`}>
                   {module.type === "finalquiz" ? "Overall Quiz" : `Module ${current + 1}`}
                 </div>
-                <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-4xl" style={{ color: "rgba(91,130,160,0.25)" }}>
+                <h2 className="text-3xl font-bold tracking-tight md:text-4xl" style={{ color: "rgba(91,130,160,0.25)", marginTop: "10px" }}>
                   {module.title}
                 </h2>
                 <p className="mt-2 text-lg text-slate-600">{module.subtitle}</p>
               </div>
             </div>
  
-            <div className="mt-8 grid gap-6 xl:grid-cols-[1fr_0.95fr]">
-              <div className="rounded-[1.75rem] border border-slate-200 bg-white/85 p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900">Learn</h3>
+            <div className={`mt-8 grid gap-6 ${current + 1 === 7 ? "grid-cols-1" : "xl:grid-cols-[1fr_0.95fr]"}`}> 
+             <div className="rounded-[1.75rem] border border-slate-200 bg-white/85 p-6 shadow-sm">
+                <h3 className="text-lg font-semibold text-slate-900">{module.type === "finalquiz" ? "Quiz Overview" : "Learn"}</h3>
                 <div className="mt-4 space-y-4 text-[15px] leading-8 text-slate-600 md:text-base">
                   {module.info.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
@@ -671,7 +661,7 @@ export default function App() {
                 <div className="flex items-center justify-between gap-3">
                   <h3 className="text-lg font-semibold text-slate-900">Activity</h3>
                   <div className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-500">
-                    {module.type === "finalquiz" ? "7-question quiz" : "Interactive check-in"}
+                    {module.type === "finalquiz" ? "6-question quiz" : "Interactive check-in"}
                   </div>
                 </div>
  
@@ -738,21 +728,21 @@ export default function App() {
             <div className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400">People</div>
             <h3 className="mt-3 text-xl font-bold text-slate-900">Supporting teams</h3>
             <p className="mt-3 text-sm leading-7 text-slate-600">
-              DesignOps helps designers succeed through onboarding, team rituals, communication support, and role clarity.
+              DesignOps helps designers succeed through onboarding and different aspects of team dynamics.
             </p>
           </div>
           <div className="rounded-[1.75rem] border border-white/50 bg-white/70 p-6 shadow-lg backdrop-blur-xl">
             <div className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400">Process</div>
             <h3 className="mt-3 text-xl font-bold text-slate-900">Improving workflows</h3>
             <p className="mt-3 text-sm leading-7 text-slate-600">
-              It creates structure around critique, handoff, documentation, prioritization, and collaboration.
+              DesignOps creates structure around critique, handoff, documentation, prioritization, collaboration.
             </p>
           </div>
           <div className="rounded-[1.75rem] border border-white/50 bg-white/70 p-6 shadow-lg backdrop-blur-xl">
             <div className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400">Tools</div>
             <h3 className="mt-3 text-xl font-bold text-slate-900">Scaling the work</h3>
             <p className="mt-3 text-sm leading-7 text-slate-600">
-              It helps teams use systems, platforms, and design libraries in a more organized and sustainable way.
+              DesignOps helps teams use the resources they're given in a more organized and sustainable way.
             </p>
           </div>
         </section>
